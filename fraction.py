@@ -7,23 +7,24 @@ class Fraction:
     unique representation, e.g. 4/5, 24/30, and -20/-25 have the same
     internal representation.
     """
-    
+
     def __init__(self, numerator, denominator=1):
         """Initialize a new fraction with the given numerator
            and denominator (default 1).
         """
-        #TODO write this (and remove this TODO comment)
-        pass
+        self.numerator = numerator
+        self.denominator = denominator
 
-    #TODO Write the __add__ method, and remove this TODO comment.
     def __add__(self, frac):
         """Return the sum of two fractions as a new fraction.
            Use the standard formula  a/b + c/d = (ad+bc)/(b*d)
         """
-        pass
+        a = int(self.numerator)
+        b = int(self.denominator)
+        c = int(frac.numerator)
 
-    #TODO write __mul__ and __str__.  Verify __eq__ works with your code.
-    #Optional have fun and overload other operators such as 
+    # TODO write __mul__ and __str__.  Verify __eq__ works with your code.
+    # Optional have fun and overload other operators such as
     # __sub__ for f-g
     # __gt__  for f > g
     # __neg__ for -f (negation)

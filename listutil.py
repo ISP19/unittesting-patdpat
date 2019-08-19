@@ -11,11 +11,16 @@ def unique(list):
     >>> unique([5])
     [5]
     >>> unique(["b","a","a","b","b","b","a","a"])
-    ["b","a"]
+    ['b', 'a']
     >>> unique([])
     []
     """
-    pass   # remove this and write the actual code
+    result = []
+    for i in list:
+        if i not in result:
+            result.append(i)
+    return result
+
 
 if __name__ == "__main__":
     """Run the doctests in all methods."""
