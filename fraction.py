@@ -19,15 +19,28 @@ class Fraction:
         """Return the sum of two fractions as a new fraction.
            Use the standard formula  a/b + c/d = (ad+bc)/(b*d)
         """
+        # from given formula a/b + c/d = (ad+bc)/(b*d) these list are for variable that require
+        # to put in to formula
         a = int(self.numerator)
         b = int(self.denominator)
         c = int(frac.numerator)
+        d = int(frac.denominator)
+        result_numerator = a*d+b*c
+        result_denominator = b*d
+        return Fraction(result_numerator, result_denominator)
 
     # TODO write __mul__ and __str__.  Verify __eq__ works with your code.
     # Optional have fun and overload other operators such as
     # __sub__ for f-g
     # __gt__  for f > g
     # __neg__ for -f (negation)
+    def __mul__(self, frac):
+        """Return the  product of multiplication of two fraction as a new fraction.
+        """
+        # formula for calculate fraction multiplication is a/b * c/d = ac/bd
+
+
+
 
     def __eq__(self, frac):
         """Two fractions are equal if they have the same value.
