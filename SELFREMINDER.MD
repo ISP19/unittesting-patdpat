@@ -11,14 +11,22 @@ The starter code for listutil.py describes the unique function.
     Write the tests using Python unittest. The test file should be listutil_test.py. Each test case is a separate method.
     Run the tests until your code passes them all.
 
-*** python unittest example
+\*\*\* python unittest example
+https://docs.python.org/2/library/unittest.html
+
 import unittest
 from listutil import unique
- 
+
 class ListUtilTest(unittest.TestCase):
- 
+
     def test_single_item_list(self):
         self.assertListEqual( ['hi'], unique(['hi']) )
- 
-if __name__ == '__main__':
-    unittest.main()
+
+    #put each test case in seperate method
+
+if **name** == '**main**':
+unittest.main()
+
+
+Problem 2. Fraction and FractionTest
+
