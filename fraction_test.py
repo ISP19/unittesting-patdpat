@@ -42,4 +42,4 @@ class FractionTest(unittest.TestCase):
         self.assertFalse(f == h)
         self.assertFalse(f.__eq__(h))
         #TODO write more tests using other cases.
-        # Consider special values like 0, 1/0, -1/0
+    #  Consider special values like 0, 1/0, -1/0

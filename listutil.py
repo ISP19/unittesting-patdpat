@@ -24,9 +24,16 @@ def unique(list):
     ['b', 'a', 0.53, 5, True, [5]]
     >>> unique([777]) #test single element
     [777]
+    >>> unique(4) #test input that is not a list
+    Traceback (most recent call last):
+     ...
+    TypeError: Input must be list
 
 
     """
+    if type(list) != type([]):
+        raise TypeError("Input must be list")
+
     result = []
     for i in list:
         if i not in result:

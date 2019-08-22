@@ -11,6 +11,14 @@ The starter code for listutil.py describes the unique function.
     Write the tests using Python unittest. The test file should be listutil_test.py. Each test case is a separate method.
     Run the tests until your code passes them all.
 
+Announcement
+Please allow Fraction(0,0) as valid fraction.
+Allow Fraction(n, 0) where n is any integer, including 0.
+Don't throw exception. This enables your Fraction class
+to handle "extended numbers". If you want to practice
+throwing and test for exception, then throw exception
+in constructor if the parameters are not "int".
+
 \*\*\* python unittest example
 https://docs.python.org/2/library/unittest.html
 
