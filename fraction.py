@@ -27,6 +27,8 @@ class Fraction:
         return f"{self.numerator},{self.denominator}"
 
     def make_simplest_form(self):
+        """transform fraction into it's simplest form
+        """
         pass
 
     # TODO Write the __add__ method, and remove this TODO comment.
@@ -51,7 +53,11 @@ class Fraction:
         return self.numerator == frac.numerator and self.denominator == frac.denominator
 
 
-a = 1.1
-b = 0
-c = Fraction(a, b)
-print(c)
+# a = 1.1
+# b = 0
+# c = Fraction(a, b)
+# print(c)
+if __name__ == "__main__":
+    """Run the doctests in all methods."""
+    import doctest
+    doctest.testmod(verbose=True)
