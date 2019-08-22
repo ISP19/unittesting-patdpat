@@ -1,3 +1,6 @@
+import math
+
+
 class Fraction:
     """A fraction with a numerator and denominator and arithmetic operations.
     Fractions are always stored in proper form, without common factors in 
@@ -11,10 +14,23 @@ class Fraction:
         """Initialize a new fraction with the given numerator
            and denominator (default 1).
         """
-        # TODO write this (and remove this TODO comment)
+        if isinstance(numerator, (int, float)) is False:
+            raise TypeError(
+                "Numerator must be whole or floating point numbers ")
+        if isinstance(denominator, (int, float)) is False:
+            raise TypeError(
+                "Denominator must be whole or floating point numbers ")
+        self.numerator = numerator
+        self.denominator = denominator
+
+    def __str__(self):
+        return f"{self.numerator},{self.denominator}"
+
+    def make_simplest_form(self):
         pass
 
     # TODO Write the __add__ method, and remove this TODO comment.
+
     def __add__(self, frac):
         """Return the sum of two fractions as a new fraction.
            Use the standard formula  a/b + c/d = (ad+bc)/(b*d)
@@ -33,3 +49,9 @@ class Fraction:
            is unique (3/6 is same as 1/2).
         """
         return self.numerator == frac.numerator and self.denominator == frac.denominator
+
+
+a = 1.1
+b = 0
+c = Fraction(a, b)
+print(c)

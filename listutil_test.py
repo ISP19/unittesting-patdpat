@@ -66,8 +66,8 @@ class ListUtilTest(unittest.TestCase):
             Ref.https://stackoverflow.com/questions/855191/how-big-can-a-python-list-get
         """
         big_boy = []
-        for i in range(10000000):
-            big_boy.append(i)
+        # for i in range(10000000):
+        #     big_boy.append(i)
         return big_boy
 
 

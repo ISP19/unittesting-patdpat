@@ -1,4 +1,4 @@
-def unique(list):
+def unique(lst):
     """Return a list containing only the first occurence of each distint
        element in list.  That is, all duplicates are omitted.
 
@@ -31,11 +31,11 @@ def unique(list):
 
 
     """
-    if type(list) != type([]):
+    if isinstance(lst, list) is False:
         raise TypeError("Input must be list")
 
     result = []
-    for i in list:
+    for i in lst:
         if i not in result:
             result.append(i)
     return result

@@ -1,3 +1,5 @@
+Zen of Python: "Readability counts".
+
 Problem 1. listutil
 
 The starter code for listutil.py describes the unique function.
