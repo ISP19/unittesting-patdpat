@@ -32,6 +32,8 @@ class Fraction:
             self.value = self.numerator/self.denominator
 
     def __str__(self):
+        """Return string form that represent fraction 
+        """
         if self.denominator == 0:
             return f"{math.nan}"
         else:
@@ -105,3 +107,16 @@ class Fraction:
             return True
         else:
             return False
+
+    def __sub__(self, frac):
+        """Return the subtraction of two fractions as a new fraction.
+           Use the standard formula  a/b - c/d = (ad-bc)/(b*d)
+        """
+        result = FT(self.value-frac.value)
+        return Fraction(result.numerator, result.denominator)
+
+    def __neg__(self):
+        """return negative form of fraction 
+        """
+        result = FT(self.value*-1)
+        return Fraction(result.numerator, result.denominator)

@@ -17,3 +17,41 @@ Write a table describing your test cases.
 | list of unique 10000000 items                      | list of 10000000 items no duplication found   |
 
 ## Test Cases for Fraction
+
+| Test case (**init**)             | Expected Result                             |
+| -------------------------------- | ------------------------------------------- |
+| test numerator                   | numerator encapsulate in self.numerator     |
+| test denominator                 | denominator encapsulate in self.denominator |
+| test for zero value in numerator | zero                                        |
+
+| Test case(**str**)                               | Expected Result       |
+| ------------------------------------------------ | --------------------- |
+| postive numerator and negative denominator       | negative fraction     |
+| numerator equal to zero                          | zero                  |
+| positive numerator and positive denominator      | positive fraction     |
+| negative numerator and 1 as denominator          | negative whole number |
+| any integer as numerator and zero as denominator | nan(not a number)     |
+
+| Test case(**eq**)                              | Expected Result                     |
+| ---------------------------------------------- | ----------------------------------- |
+| two exact fractions                            | True                                |
+| same value fractions different expression      | True                                |
+| different value fractions different expression | False                               |
+| zero and zero different denominator            | True                                |
+| any numerator with zero as denominator         | the value of fraction equals to nan |
+
+| Test case (**add**)                                     | Expected Result             |
+| ------------------------------------------------------- | --------------------------- |
+| two positive fraction                                   | positive addition result    |
+| one positive add with one negative                      | positive subtraction result |
+| positive fraction and negative fraction with same value | zero                        |
+| two negative fraction                                   | negative addition result    |
+| negative fraction and positive fraction with same value | zero                        |
+
+| Test case (**mul**)                                     | Expected Result                                  |
+| ------------------------------------------------------- | ------------------------------------------------ |
+| two positive fraction                                   | positive multiplication result                   |
+| one positive add with one negative                      | negative multiplication result                   |
+| positive fraction and negative fraction with same value | negative with power of 2 to the origina fraction |
+| two negative fraction                                   | positive multiplication result                   |
+| some fraction with zero                                 | zero                                             |
