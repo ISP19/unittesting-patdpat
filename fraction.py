@@ -62,12 +62,17 @@ class Fraction:
             return numerator, denominator
 
     def check_negative(self):
+        """metohd to check is the fraction is whole number or not
+        """
+
         if self.value < 0:
             return True
         elif self.value > 0:
             return False
 
     def check_whole(self, denominator):
+        """metohd to check is the fraction is whole number or not
+        """
         if denominator == 1:
             return True
         elif denominator == -1:
@@ -90,12 +95,6 @@ class Fraction:
         # call fraction library in order to convert decimal to fraction
         result = FT(self.value*frac.value)
         return Fraction(result.numerator, result.denominator)
-
-    # TODO write __mul__ and __str__.  Verify __eq__ works with your code.
-    # Optional have fun and overload other operators such as
-    # __sub__ for f-g
-    # __gt__  for f > g
-    # __neg__ for -f (negation)
 
     def __eq__(self, frac):
         """Two fractions are equal if they have the same value.
