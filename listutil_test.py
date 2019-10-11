@@ -64,11 +64,12 @@ class ListUtilTest(unittest.TestCase):
         """method use to generate list of ten million items
             In theory python list can hold up to 536,870,912  items
             Ref.https://stackoverflow.com/questions/855191/how-big-can-a-python-list-get
-        """
-        big_boy = []
-        for i in range(10000000):
-            big_boy.append(i)
-        return big_boy
+        # """
+        # big_boy = []
+        # for i in range(10000000):
+        #     big_boy.append(i)
+        # return big_boy
+        pass
 
 
 if __name__ == '__main__':
