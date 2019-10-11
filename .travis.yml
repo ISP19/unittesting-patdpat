@@ -13,6 +13,6 @@ install:
 
 # script to run tests. Can also use make, e.g. "make test"
 script:
-  - python -m unittest discover -p "*listutil_test.py"
+  - python -m unittest discover -p "listutil_test.py"
 
-  - python -m unittest discover -p "*fraction_test.py"
+  - python -m unittest discover -p "fraction_test.py"
