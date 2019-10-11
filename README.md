@@ -1,5 +1,7 @@
 ## Unit Testing Assignment
 
+[![Build Status](https://travis-ci.com/patdpat/unittesting-patdpat.svg?branch=master)](https://travis-ci.com/patdpat/unittesting-patdpat)
+
 by Sidtipat 6110546046
 
 ## Test Cases for unique
