@@ -1,18 +1,5 @@
 language: python
-
-python: "3.7"
-
-# don't clone more than necessary
-git:
-  depth: 1
-
-# Install dependencies
-install:
-  #  unittesting does not require any requirements
-  # - pip install -r requirements.txt
-
-# script to run tests. Can also use make, e.g. "make test"
+python:
+  - "3.7"
 script:
-  - python -m unittest discover -p "listutil_test.py"
-
-  - python -m unittest discover -p "fraction_test.py"
+  - python -m unittest discover -p "*_test.py"
