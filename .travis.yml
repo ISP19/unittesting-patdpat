@@ -8,6 +8,7 @@ git:
 
 # Install dependencies
 install:
+  #  unittesting does not require any requirements
   # - pip install -r requirements.txt
 
 # script to run tests. Can also use make, e.g. "make test"
