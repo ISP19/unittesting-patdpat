@@ -4,6 +4,8 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![GitHub followers](https://img.shields.io/github/followers/patdpat.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/patdpat?tab=followers)
 
+https://travis-ci.com/patdpat/unittesting-patdpat
+
 by Sidtipat 6110546046
 
 ## Test Cases for unique
