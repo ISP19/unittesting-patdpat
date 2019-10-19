@@ -3,6 +3,10 @@
 [![Build Status](https://travis-ci.com/patdpat/unittesting-patdpat.svg?branch=master)](https://travis-ci.com/patdpat/unittesting-patdpat)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![GitHub followers](https://img.shields.io/github/followers/patdpat.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/patdpat?tab=followers)
+[![codecov](https://codecov.io/gh/patdpat/unittesting-patdpat/branch/master/graph/badge.svg)](https://codecov.io/gh/patdpat/unittesting-patdpat)
+
+
+
 
 https://travis-ci.com/patdpat/unittesting-patdpat
 
