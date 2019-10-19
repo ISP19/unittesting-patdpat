@@ -3,3 +3,12 @@ python:
   - "3.7"
 script:
   - python -m unittest discover -p "*_test.py"
+install:
+  - pip install codecov
+
+script:
+  - (run your unit tests with "coverage" to generate code coverage data)
+
+after_success:
+  - codecov
+    
