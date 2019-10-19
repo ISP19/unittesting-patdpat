@@ -7,7 +7,8 @@ install:
   - pip install codecov
 
 script:
-  - (run your unit tests with "coverage" to generate code coverage data)
+  - coverage run fraction_test.py
+  - coverage run list_util.py  
 
 after_success:
   - codecov
