@@ -8,7 +8,7 @@ install:
 
 script:
   - coverage run fraction_test.py
-  - coverage run list_util.py  
+  - coverage run listutil_test.py  
 
 after_success:
   - codecov
